@@ -13,7 +13,18 @@
 		A55AA190239A2253002C0E29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55AA18E239A2253002C0E29 /* Main.storyboard */; };
 		A55AA192239A2254002C0E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55AA191239A2254002C0E29 /* Assets.xcassets */; };
 		A55AA195239A2254002C0E29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55AA193239A2254002C0E29 /* LaunchScreen.storyboard */; };
+		A55AA1A3239A2528002C0E29 /* TestFastlaneProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AA1A2239A2528002C0E29 /* TestFastlaneProjectTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A55AA1A5239A2528002C0E29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A55AA17D239A2252002C0E29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A55AA184239A2253002C0E29;
+			remoteInfo = TestFastlaneProject;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A55AA185239A2253002C0E29 /* TestFastlaneProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFastlaneProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		A55AA191239A2254002C0E29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A55AA194239A2254002C0E29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A55AA196239A2254002C0E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A55AA1A0239A2528002C0E29 /* TestFastlaneProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestFastlaneProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A55AA1A2239A2528002C0E29 /* TestFastlaneProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFastlaneProjectTests.swift; sourceTree = "<group>"; };
+		A55AA1A4239A2528002C0E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A55AA182239A2253002C0E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A55AA19D239A2528002C0E29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				A55AA187239A2253002C0E29 /* TestFastlaneProject */,
+				A55AA1A1239A2528002C0E29 /* TestFastlaneProjectTests */,
 				A55AA186239A2253002C0E29 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				A55AA185239A2253002C0E29 /* TestFastlaneProject.app */,
+				A55AA1A0239A2528002C0E29 /* TestFastlaneProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +88,15 @@
 				A55AA196239A2254002C0E29 /* Info.plist */,
 			);
 			path = TestFastlaneProject;
+			sourceTree = "<group>";
+		};
+		A55AA1A1239A2528002C0E29 /* TestFastlaneProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				A55AA1A2239A2528002C0E29 /* TestFastlaneProjectTests.swift */,
+				A55AA1A4239A2528002C0E29 /* Info.plist */,
+			);
+			path = TestFastlaneProjectTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +119,24 @@
 			productReference = A55AA185239A2253002C0E29 /* TestFastlaneProject.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A55AA19F239A2528002C0E29 /* TestFastlaneProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A55AA1A7239A2528002C0E29 /* Build configuration list for PBXNativeTarget "TestFastlaneProjectTests" */;
+			buildPhases = (
+				A55AA19C239A2528002C0E29 /* Sources */,
+				A55AA19D239A2528002C0E29 /* Frameworks */,
+				A55AA19E239A2528002C0E29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A55AA1A6239A2528002C0E29 /* PBXTargetDependency */,
+			);
+			name = TestFastlaneProjectTests;
+			productName = TestFastlaneProjectTests;
+			productReference = A55AA1A0239A2528002C0E29 /* TestFastlaneProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +149,10 @@
 				TargetAttributes = {
 					A55AA184239A2253002C0E29 = {
 						CreatedOnToolsVersion = 11.2.1;
+					};
+					A55AA19F239A2528002C0E29 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = A55AA184239A2253002C0E29;
 					};
 				};
 			};
@@ -116,6 +170,7 @@
 			projectRoot = "";
 			targets = (
 				A55AA184239A2253002C0E29 /* TestFastlaneProject */,
+				A55AA19F239A2528002C0E29 /* TestFastlaneProjectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 				A55AA195239A2254002C0E29 /* LaunchScreen.storyboard in Resources */,
 				A55AA192239A2254002C0E29 /* Assets.xcassets in Resources */,
 				A55AA190239A2253002C0E29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A55AA19E239A2528002C0E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +206,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A55AA19C239A2528002C0E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A55AA1A3239A2528002C0E29 /* TestFastlaneProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A55AA1A6239A2528002C0E29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A55AA184239A2253002C0E29 /* TestFastlaneProject */;
+			targetProxy = A55AA1A5239A2528002C0E29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A55AA18E239A2253002C0E29 /* Main.storyboard */ = {
@@ -316,6 +394,46 @@
 			};
 			name = Release;
 		};
+		A55AA1A8239A2528002C0E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CHZJAHSJ6N;
+				INFOPLIST_FILE = TestFastlaneProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testFastlane.TestFastlaneProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestFastlaneProject.app/TestFastlaneProject";
+			};
+			name = Debug;
+		};
+		A55AA1A9239A2528002C0E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CHZJAHSJ6N;
+				INFOPLIST_FILE = TestFastlaneProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testFastlane.TestFastlaneProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestFastlaneProject.app/TestFastlaneProject";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +451,15 @@
 			buildConfigurations = (
 				A55AA19A239A2254002C0E29 /* Debug */,
 				A55AA19B239A2254002C0E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A55AA1A7239A2528002C0E29 /* Build configuration list for PBXNativeTarget "TestFastlaneProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A55AA1A8239A2528002C0E29 /* Debug */,
+				A55AA1A9239A2528002C0E29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
